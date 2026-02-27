@@ -34,7 +34,7 @@ assetsSummary:
 citation: Bell Vila, Monica; Koletar, Margaret; Dorr, Adrienne; Trevisiol, Andrea;
   Goubran, Maged; Sled, John G.; Bazzigaluppi, Paolo; Stefanovic, Bojana (2026) Data
   for parametrizing alternating current stimulation for neuromodulation (Bell Vila,
-  M., et al, 2026) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001678/draft
+  M., et al, 2026) (Version 0.260227.1824) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001678/0.260227.1824
 contributor:
 - affiliation:
   - name: University of Toronto
@@ -147,6 +147,7 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
 dateCreated: '2025-12-03T21:30:49.761609+00:00'
+datePublished: '2026-02-27T18:24:49.896213+00:00'
 description: "Data collected using a 4x4 multielectrode array (Microprobes) in propofol
   anesthetized rats receiving subcutaneous alternating current stimulation.\n\nRecording
   electrodes had platinum iridium shanks with a tip width of 125μm, an impedance of
@@ -165,13 +166,14 @@ description: "Data collected using a 4x4 multielectrode array (Microprobes) in p
   recorded for 20-min before stimulation onset and subsequently following sACS for
   10 minutes. Additional subfolders contain further 20-min of post stimulation baseline
   activity, collected to an hour following stimulation offset."
+doi: 10.48324/dandi.001678/0.260227.1824
 ethicsApproval:
 - contactPoint:
     email: cr.acc@sunnybrook.ca
     schemaKey: ContactPoint
   identifier: '24957'
   schemaKey: EthicsApproval
-id: DANDI:001678/draft
+id: DANDI:001678/0.260227.1824
 identifier: DANDI:001678
 keywords:
 - electrophysiology
@@ -180,9 +182,21 @@ keywords:
 license:
 - spdx:CC0-1.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/001678/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/001678/0.260227.1824/assets.yaml
 name: Data for parametrizing alternating current stimulation for neuromodulation (Bell
   Vila, M., et al, 2026)
+publishedBy:
+  endDate: '2026-02-27T18:24:49.896213+00:00'
+  id: urn:uuid:16afea4b-db3e-40d8-a7ae-6591a18cca75
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-02-27T18:24:49.896213+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:9f9036b6-979c-4d8b-a853-453ba8cd4f23
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - name: Parametrizing alternating current stimulation for neuromodulation
   relation: dcite:IsCitedBy
@@ -197,6 +211,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10
-url: https://dandiarchive.org/dandiset/001678/draft
-version: draft
+url: https://dandiarchive.org/dandiset/001678/0.260227.1824
+version: 0.260227.1824
 wasGeneratedBy: []
