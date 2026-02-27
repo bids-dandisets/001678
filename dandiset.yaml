@@ -3,6 +3,7 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.10/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -19,9 +20,9 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 51339891188
-  numberOfFiles: 21
-  numberOfSubjects: 21
+  numberOfBytes: 55247366195
+  numberOfFiles: 22
+  numberOfSubjects: 22
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
@@ -30,16 +31,121 @@ assetsSummary:
   variableMeasured:
   - ElectricalSeries
   - ElectrodeGroup
-citation: Bell Vila, Monica (2025) Data for parametrizing alternating current stimulation
-  for neuromodulation (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001678/draft
+citation: Bell Vila, Monica; Koletar, Margaret; Dorr, Adrienne; Trevisiol, Andrea;
+  Goubran, Maged; Sled, John G.; Bazzigaluppi, Paolo; Stefanovic, Bojana (2026) Data
+  for parametrizing alternating current stimulation for neuromodulation (Bell Vila,
+  M., et al, 2026) (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001678/draft
 contributor:
-- affiliation: []
-  email: monica.bellvila@gmail.com
+- affiliation:
+  - name: University of Toronto
+    schemaKey: Affiliation
+  - name: Sunnybrook Research Institute
+    schemaKey: Affiliation
+  email: monica.bellvila@mail.utoronto.ca
   includeInCitation: true
   name: Bell Vila, Monica
   roleName:
   - dcite:ContactPerson
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:FormalAnalysis
+  - dcite:Investigation
+  - dcite:Methodology
+  - dcite:Researcher
   schemaKey: Person
+- affiliation:
+  - name: Sunnybrook Research Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Koletar, Margaret
+  roleName:
+  - dcite:Author
+  - dcite:Methodology
+  - dcite:Investigation
+  schemaKey: Person
+- affiliation:
+  - name: Sunnybrook Research Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Dorr, Adrienne
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- affiliation:
+  - name: Sunnybrook Research Institute
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Trevisiol, Andrea
+  roleName:
+  - dcite:Author
+  - dcite:Methodology
+  schemaKey: Person
+- affiliation:
+  - name: Sunnybrook Research Institute
+    schemaKey: Affiliation
+  - name: University of Toronto
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Goubran, Maged
+  roleName:
+  - dcite:Author
+  - dcite:Methodology
+  - dcite:Resources
+  schemaKey: Person
+- affiliation:
+  - name: University of Toronto
+    schemaKey: Affiliation
+  - name: Hospital for Sick Children
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Sled, John G.
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  schemaKey: Person
+- affiliation:
+  - name: Sunnybrook Research Institute
+    schemaKey: Affiliation
+  - name: MetaCell
+    schemaKey: Affiliation
+  includeInCitation: true
+  name: Bazzigaluppi, Paolo
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:Investigation
+  - dcite:Methodology
+  - dcite:Supervision
+  schemaKey: Person
+- affiliation:
+  - name: Sunnybrook Research Institute
+    schemaKey: Affiliation
+  - name: University of Toronto
+    schemaKey: Affiliation
+  email: bojana.stefanovic@utoronto.ca
+  includeInCitation: true
+  name: Stefanovic, Bojana
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  - dcite:Methodology
+  - dcite:FundingAcquisition
+  - dcite:ProjectAdministration
+  - dcite:ProjectLeader
+  - dcite:ProjectManager
+  - dcite:Supervision
+  schemaKey: Person
+- awardNumber: PJT173409
+  name: Canadian Institutes of Health Research (CIHR)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01AG084681
+  name: National Institutes of Health (NIH)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2025-12-03T21:30:49.761609+00:00'
 description: "Data collected using a 4x4 multielectrode array (Microprobes) in propofol
   anesthetized rats receiving subcutaneous alternating current stimulation.\n\nRecording
@@ -59,15 +165,38 @@ description: "Data collected using a 4x4 multielectrode array (Microprobes) in p
   recorded for 20-min before stimulation onset and subsequently following sACS for
   10 minutes. Additional subfolders contain further 20-min of post stimulation baseline
   activity, collected to an hour following stimulation offset."
+ethicsApproval:
+- contactPoint:
+    email: cr.acc@sunnybrook.ca
+    schemaKey: ContactPoint
+  identifier: '24957'
+  schemaKey: EthicsApproval
 id: DANDI:001678/draft
 identifier: DANDI:001678
+keywords:
+- electrophysiology
+- neuromodulation
+- alternating current stimulation
 license:
 - spdx:CC0-1.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001678/versions/draft/assets/
-name: Data for parametrizing alternating current stimulation for neuromodulation
+name: Data for parametrizing alternating current stimulation for neuromodulation (Bell
+  Vila, M., et al, 2026)
+relatedResource:
+- name: Parametrizing alternating current stimulation for neuromodulation
+  relation: dcite:IsCitedBy
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://doi.org/10.1162/IMAG.a.1066
+- name: Analysis Code
+  relation: dcite:IsSupplementTo
+  schemaKey: Resource
+  url: 
+    https://github.com/m-bellvila/Parametrizing-alternating-current-stimulation-for-neuromodulation.git
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10
 url: https://dandiarchive.org/dandiset/001678/draft
 version: draft
+wasGeneratedBy: []
